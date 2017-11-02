@@ -1,11 +1,11 @@
 # DS:GA:1001 Intro to Data Science
 A course project that uses several machine learning algorithms to analyze data
 
-Business Problem & Business Value: 
+## Business Problem & Business Value: 
 
 A Portuguese banking institution attempts to get more of its clients to subscribe for a term deposit. A higher amount of term deposit subscription creates more opportunities for the bank to increase profit, which allows the bank to invest in higher gain financial products and to pay higher interest to its customers. 
 
-Supervised data mining problem, Data Features, Target Variable, & Possible Useful Features:
+## Supervised data mining problem, Data Features, Target Variable & Possible Useful Features:
 
 Given a customer's basic information, past campaign results, several current economic indicators and whether the customer finally subscribe a term deposit or not, we will train a predictive model. This predictive model can effectively predict whether a customer will subscribe a term deposit based on his or her personal information, past campaign results and current economic environment.
 
@@ -15,7 +15,7 @@ The target variable named "Y" in the dataset, is binary and indicates whether th
 
 Among the 20 features, contact communication type will not be considered as explanatory variable because it only tells either the client was contacted by telephone or cellular. All rest features can be considered as useful variables so far. 
 
-Business Scenario:
+## Business Scenario:
 
 The predictive model will contribute to bank’s marketing team to better targeting their potential clients who are more likely to make subscriptions for term deposit. When given a new client’s information, this model will give a predictive result of whether the customer will subscribe for a term deposit with the bank. Then, the marketing team can focus on advertising the bank’s term deposit products to those clients whose predictive results are positive. Also, the dataset includes some data about when and how often the client was contacted. By dealing with those data, we might be able to give suggestions on how to conduct campaigns in a more effective way.
 
