@@ -1,6 +1,8 @@
 # DS:GA:1001 Intro to Data Science
 A course project that uses several machine learning algorithms to analyze data
 
+Data Source: https://www2.1010data.com/documentationcenter/prod/Tutorials/MachineLearningExamples/BankMarketingDataSet.html
+
 ## Business Problem & Business Value: 
 
 A Portuguese banking institution attempts to get more of its clients to subscribe for a term deposit. A higher amount of term deposit subscription creates more opportunities for the bank to increase profit, which allows the bank to invest in higher gain financial products and to pay higher interest to its customers. 
