@@ -1,7 +1,7 @@
-# DS:GA:1001 Intro to Data Science
+# Prediction on Term Deposit's subscription
 A course project that uses several machine learning algorithms to analyze data
 
-Data Source: https://www2.1010data.com/documentationcenter/prod/Tutorials/MachineLearningExamples/BankMarketingDataSet.html
+## Data Source: https://www2.1010data.com/documentationcenter/prod/Tutorials/MachineLearningExamples/BankMarketingDataSet.html
 
 ## Business Problem & Business Value: 
 
