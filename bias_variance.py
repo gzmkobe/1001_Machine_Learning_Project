@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 import sklearn.metrics as skm
 import warnings
 warnings.filterwarnings('ignore')
-from sklearn import linear_model
+from sklearn import linea
 
 def simPolynomial(sigma = 0, betas = [0, 0], n = 100):
 
