@@ -50,3 +50,14 @@ del data['housing']
 del data['y']
 
 # data: 41188 rows × 36 columns
+
+# Deal with aducation: concert to number: replace basic.4y w/ 4, etc.
+data.education.replace(['basic.4y', 'high.school', 'basic.6y', 'basic.9y','professional.course', 'unknown', 'university.degree', 'illiterate'], [4, 12, 6, 9, 14, 'Nan', 16, 0], inplace=True)
+# Deal with Month:
+data.education.replace(['may', 'jun', 'jul', 'aug', 'oct', 'nov', 'dec', 'mar', 'apr', 'sep'], [5, 6, 7, 8, 10, 11, 12, 3, 4, 9], inplace=True)
+# Deal with day_of_week:
+data.education.replace(['mon', 'tue', 'wed', 'thu', 'fri'], [1, 2, 3, 4, 5], inplace=True)
+
+## Check data: 
+#pd.value_counts(data['education'])
+# pd.value_counts(data['pdays'])
