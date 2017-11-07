@@ -40,6 +40,8 @@ data['hsng'] = ((data["housing"] == 'yes')).astype(int)
 data['h_unk'] = ((data["housing"] == 'unknown')).astype(int)
 ## Client subscribes for a term deposit -- y
 data['yy'] = ((data["y"] == 'yes')).astype(int)
+## contact method: if telephone--1, otherwise -- 0
+data['contact'] = ((data["contact"] == 'telephone')).astype(int)
 # reomve the original categritcal variables in data
 del data['marital']
 del data['job']
@@ -48,6 +50,13 @@ del data['loan']
 del data['default']
 del data['housing']
 del data['y']
+
+# Deal with aducation: concert to number: replace basic.4y w/ 4, etc.
+data.education.replace(['basic.4y', 'high.school', 'basic.6y', 'basic.9y','professional.course', 'unknown', 'university.degree', 'illiterate'], [4, 12, 6, 9, 14, 'Nan', 16, 0], inplace=True)
+# Deal with Month:
+data.month.replace(['may', 'jun', 'jul', 'aug', 'oct', 'nov', 'dec', 'mar', 'apr', 'sep'], [5, 6, 7, 8, 10, 11, 12, 3, 4, 9], inplace=True)
+# Deal with day_of_week:
+data.day_of_week.replace(['mon', 'tue', 'wed', 'thu', 'fri'], [1, 2, 3, 4, 5], inplace=True)
 
 # data: 41188 rows × 36 columns
 
