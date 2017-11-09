@@ -70,3 +70,4 @@ data.education.replace(['mon', 'tue', 'wed', 'thu', 'fri'], [1, 2, 3, 4, 5], inp
 ## Check data: 
 #pd.value_counts(data['education'])
 # pd.value_counts(data['pdays'])
+data.to_csv(path_or_buf=nowpath+'/bankout.csv',sep=',')
